@@ -1,0 +1,280 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+nav {
+    background-color: #720202;
+    overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: right;
+  padding: 15px 36px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav li a:hover {
+    background-color: #fdd;
+    color: rgb(122, 8, 8);
+}
+
+header {
+    background-color: #720202;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	overflow: hidden;
+    text-align: center;
+	height: 235px
+    }
+
+    h1{
+        color: #e6baba
+    }
+
+    h2{
+        font-family:fantasy;
+        font-size: 25px;
+        color: #eaa1a1
+    }
+
+section{
+    padding: 35px;
+    background-color: #e8e5e5
+}
+    h3{
+        color: #7c2626;
+        font-family: fantasy;
+    }
+    p{
+        font-family: fantasy;
+    }
+
+.slideshow-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+img {
+    vertical-align: middle;
+    position:relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Photo animations */
+.slideshow-container{
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 1s; /* adjust this value as needed */
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.menu {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 1s; /* adjust this value as needed */
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menu {
+    margin-left: 70px;
+    margin-right: 70px;
+    justify-content:center;
+    overflow: hidden;
+}
+
+.menufood {
+    margin-left: 70px;
+    margin-right: 70px;
+    justify-content:center;
+    overflow: hidden;
+}
+.menufood {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 3s; /* adjust this value as needed */
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.menufarm {
+    margin-left: 70px;
+    margin-right: 70px;
+    justify-content:center;
+    overflow: hidden;
+}
+.menufarm {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-delay: 6s; /* adjust this value as needed */
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Paddings for Menu page */
+.Description{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+}
+.menupadding{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+}
+
+/* Paddings for Contact page */
+.contactdetails{
+    padding-left: 80px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    font-family: fantasy;
+}
+input[type="submit"] {
+  background-color: #720202; /* Set background color */
+  border: none; /* Remove border */
+  color: #fdd; /* Set text color */
+  padding: 12px 24px; /* Set padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove text decoration */
+  display: inline-block; /* Set display to inline-block */
+  font-size: 16px; /* Set font size */
+  font-family: fantasy;
+  margin: 4px 2px; /* Set margin */
+  cursor: pointer; /* Add hover effect */
+}
+
+input[type="submit"]:hover {
+  background-color: #fdd; /* Change background color on hover */
+  color: rgb(122, 8, 8)
+}
+
+/* Paddings for Reservation page */
+.reservationpitch{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.reservationcontainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reservationdetails{
+    padding-left: 100px;
+    padding-bottom: 50px;
+    font-family: fantasy;
+}
+.reservationdetails {
+  width: 40%;
+  float: left;
+}
+
+.reservationfood {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reservationfood img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Reservation inspiration section */
+.inspiration{
+    padding-left: 80px;
+}
+.reservation-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reservation-icons a {
+  color: #C42619;
+  font-size: 8px;
+  margin: 0 10px;
+}
+.reservation-icons a:hover {
+  color: #e67070;
+}
+
+input {
+  border: 2px solid #720202;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(248, 235, 235);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+input::placeholder {
+  color: #999;
+  font-family: fantasy;
+}
+input:focus {
+  outline: none;
+  border-color: #ebac6c;
+  box-shadow: 0 0 5px #ebac6c;
+}
+
+footer{
+    background-color: #720202;
+    padding-top: 19px;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	overflow: hidden;
+    text-align: center;
+	height: 120px    
+}
